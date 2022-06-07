@@ -1,0 +1,36 @@
+#print("assalomu alaykum")
+#õzgaruvchilar 17.04.2022 Jamshidbek
+#ism = "Jamshidbek"
+yosh = 21
+print(ism)
+print(yosh)
+print("õzgaruvchi (variable) bunday deyilishiga sabab, uning qiymati istalgan vaqtda õzgarishi mumkin: \n ism = Jamshidbek \n print(ism) \n ism = kingismen \n print(ism) ")
+ism = "jamshidbek"
+print(ism)
+ism = "kingismen"
+print(ism)
+#o‘zgaruvchilarga nom beryotganda quydagi qoidalarga amal qiling:
+#1chisi o‘zgaruvchini nomi harf yoki pastki chisiq(_) bilan boshlanishi kerak
+#2chisi o‘zgaruvchi nomi raqam bilan boshlanishi mumkin emas
+#3o‘zgaruvchida bo‘shliq bo‘lmaydi;
+ism_sharif = "Nurullayev Jamshidbek"
+print(ism_sharif)
+# bazi sõzlarni õzgaruvchining nomiga qõyib bõlmiydi masalan bularni: help("keywords")
+help("keywords")
+# topshiriqlar
+
+krish = "hello world!"
+print(krish)
+
+xabar = "maqsad sari olğa"
+#print(xabar)
+#xabar = "maqsadingga qarab tõxtamay harakat qil!"
+#print(xabar)
+
+#class = 15
+#print(class)
+
+#radius = 5
+#pi = 3.14159
+#aylana_yuzi = pi * radius ** 2
+#print("radiusi", radius, "ga teng bõlgan aylananing yuzi= ", aylana_yuzi, "ga teng")
