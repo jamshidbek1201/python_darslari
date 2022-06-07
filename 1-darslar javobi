@@ -1,0 +1,33 @@
+print("Assalom dunyo")
+print("darslarni yaxshlab organaman")
+print(76/2+12)
+print("Assalomu alaykum, bugundan darslarni boshladim. Bugun 15-aprel. Bugun o'rgangan narsam print komandasi bo'ldi")
+print('konsulni tozalash uchun \'clear\' dan foydalanamiz')
+print(19/3)
+print(19//3)
+print(9*2)
+print(9**2)
+print(5*3)
+print(5**3)
+print("""agar matnda bir
+   nechta qatorga bõlib
+   yozmoqchi bõlsangiz
+   uchtalik qõsh tirnoq yoki
+   uchtalik bir tirnoqdan
+   foydalanasiz""")
+print("qatorga bõlishning yana bir usuli" '\n' "belgisini qõyish kerak")
+#masalan
+print("men talabaman \n õqruvchilik ham qilaman \n qõshimcha darslarga ham boraman")
+print("bõlinmani qoldiğini olish uchun % belgisidan foydalanadi")
+#masalan
+print("15%6=" , 15%6)
+print("\"Nexia\",\"tiko\",'damas' ko'rganlar qilar havas")
+#5 ning 4-darajasini toping
+print("5ning 4-darajasi", 5**4 ,"ga teng" )
+# 22 ni 4ga bõlganda qancha qoldiq qoladi?
+print("22ni 4ga bõlganda",22%4, "qoldiq qoladi")
+# tomoni 125 ga teng kvadratning yuzi va perimetrini toping
+print("tomoni 125 ga teng bõlgan kvadratni yuzi", 125**2, "ga teng, perimetri esa", 125*4,"ga teng")
+#diametri 12ga teng bõlgan doiraning yuzini toping (p=3.14 deb oling )
+print("diametri 12 ga teng bõlgan doirani radusi", 12/2, "teng bõladi, fõrmulaga asosan pr^2 dan foydalansak",((12/2)**2)*3.14,"ga teng bõladi")
+print("katetlari 6 va 7 bõlgan tõğri burchakli uchburchakning gipotenuzasini toping \n yeshilishi: katetlar kivadratilari yiğindisi gipotenuzani kvadratiga teng degan teoremadan foydalansak gipotenuzasi", (6**2+7**2)**1/2,"ga teng bõladi")
