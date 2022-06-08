@@ -1,0 +1,84 @@
+print("assalomu alaykum")
+shahar = "sardoba"
+viloyat = "sirdaryo"
+matn = "men yangi telifon(📱) oldim"
+print(matn)
+matnni qo‘shish uchun + dan foydalanamiz
+ism = "ahmad"
+print("mening ismim "+ism)
+ism = "ahad"
+familiya = "qayum"
+print(ism+familiya)
+print(ism+" "+familiya)
+
+# f_sting ikki va undan ko‘p matnlarni birlashtrish uchun f"{matn1}{matn2}" dan ham foydalansak bo‘ladi
+ism = "ahad"
+sharif = "berdivich"
+familiya = "qayum"
+ism_sharif = f"{ism}{sharif}"
+ism_familiya = f"{ism} {familiya}"
+print(ism_sharif)
+print(ism_familiya)
+#bu usul yordamida uzun matnlarni ham yasash mumkin
+ism = "James"
+familiya = "Bond"
+print(f"Salom mening ismim {ism}. {ism} {familiya}")
+#matnga bo‘shliq qo‘yish uchun (\t) belgisidan yangi qatordan boshlash uchun (\n) belgisidan foydalanamiz
+print("hello world")
+print("hello \tworld")
+print("hello \nworld")
+#pythonda string ustida amalga oshirish mumkin bõlgan tayyor amallar tõplami mavjud. Bunday ammallar tõplami metodlar deyiladi.
+#metodni qõllash uchun matndan keyin metodni nomini qõllash kifoya
+# upper() metodi matindagi har bir harfni katta harfga õzgartiradi
+ism = "ahad"
+familiya = "qayum"
+ism_familiya = f"{ism} {familiya}"
+print(ism_familiya.upper())
+print("komila".upper())
+print("aziza".upper())
+ism_familiya = ism_familiya.upper()#bu narsada õzgaruvchilarni katta harfda saqlaymiz
+#lower metodi har bir harifni kichkina harfga õtkazadi
+ism = "Ahad"
+familiya = "QAYUM"
+ism_familiya = f"{ism} {familiya}"
+print(ism_familiya.lower())
+# title() metodi matindagi har bir sõzni katta harfda yozadi
+ism = "aziza"
+familiya = "ahrorova"
+ism_famil = f"{ism} {familiya}"
+print(ism_famil.title())
+#capitalize faqatgina eng birinchi sõzni bosh harf bilan yozadi
+print(ism_famil.capitalize())
+
+meva = "     olma      "
+print(meva)
+#lstrip() matn boshidagi
+#rstrip() matn oxiridagi
+#strip() matn boshi va oxiridagi bõshliqlarni olib tashliydi
+print("men " + meva.lstrip() + "yaxshi kõraman")
+print("men " + meva.rstrip() + " yaxshi kõraman")
+print(" men " + meva.strip() + " yaxshi kõraman")
+print(" men " + meva + " yaxshi kõraman")
+
+#input foydalanuvchi bilan muloqot
+ism = input("ismingiz nima? ")
+print("Assalomu alaykum " + ism)
+#endi bu kõdlarni chiroyli holga keltramiz
+ism = input("ismingiz nima? \n>>>>")
+print("Assalomu alaykum, " + ism.title())
+# topshiriqlar
+
+kocha = "boğbon"
+mahalla = "soğbon"
+tuman = "bodomzor"
+viloyat = "Samarqand"
+manzil = f"{kocha}  kõchasi, {mahalla} mahallasi, {tuman}  tumani, {viloyat}  viloyati"
+print(manzil)
+ism = input("kõchangizni nomini yozing\n>>>")
+ism1 = input("mahallanizni kiriting\n>>>")
+ism2 = input("tumanizni nomini kiriting\n>>>")
+ism3 = input("viloyatingizni nomini kiriting\n>>>")
+print("manziliz arxivga kiritildi: kõchangiz "+ism.title(), " mahallaiz "+ism1.title(), " tumanigiz "+ism2.title(), " viloyatingiz " +ism3.title())
+
+ism4 = input("isminizni kiriting\n>>>")
+print("Assalomu alaykum " + ism4.title())
