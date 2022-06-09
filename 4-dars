@@ -1,0 +1,24 @@
+#Nurullayev Jamshidbek
+#18.04.2022
+
+#1- topshiriq
+son = input("Istalgan sonni kiriting:\n>>>")
+sonni_kv = str(int(son)**2)
+sonni_kub = str(int(son)**3)
+print( son + " ning kvadrati "+ sonni_kv + " ga teng,")
+print( son + " ning kubi " + sonni_kub + " ga teng.")
+#2-topshiriq
+yosh = input(" Yoshingiz nechida? \n>>>")
+hisob = 2022- int(yosh)
+print("Siz " + str(hisob) + " da tug'ilgansiz")
+#3-topshiriq
+a = input(" Birinchi sonni kriting:\t")
+b = input(' ikkinchi sonni kriting:\t')
+c1 = str(int(a) + int(b))
+c2 = str(int(a) - int(b))
+c3 = str(int(a) * int(b))
+c4 = str(int(a) / int(b))
+print(a + " + " + b + " = " + c1)
+print(a + " - " + b + " = " + c2)
+print(a + " * " + b + " = " + c3)
+print(a + " / " + b + " = " + c4)
