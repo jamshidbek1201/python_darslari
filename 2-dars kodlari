@@ -1,6 +1,6 @@
-#print("assalomu alaykum")
+print("assalomu alaykum")
 #õzgaruvchilar 17.04.2022 Jamshidbek
-#ism = "Jamshidbek"
+ism = "Jamshidbek"
 yosh = 21
 print(ism)
 print(yosh)
@@ -23,14 +23,14 @@ krish = "hello world!"
 print(krish)
 
 xabar = "maqsad sari olğa"
-#print(xabar)
-#xabar = "maqsadingga qarab tõxtamay harakat qil!"
-#print(xabar)
+print(xabar)
+xabar = "maqsadingga qarab tõxtamay harakat qil!"
+print(xabar)
 
-#class = 15
-#print(class)
+class = 15
+print(class)
 
-#radius = 5
-#pi = 3.14159
-#aylana_yuzi = pi * radius ** 2
-#print("radiusi", radius, "ga teng bõlgan aylananing yuzi= ", aylana_yuzi, "ga teng")
+radius = 5
+pi = 3.14159
+aylana_yuzi = pi * radius ** 2
+print("radiusi", radius, "ga teng bõlgan aylananing yuzi= ", aylana_yuzi, "ga teng")
