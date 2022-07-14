@@ -1,0 +1,26 @@
+'''amalyotlar:
+Quyidagi mashqlarni bajaring:
+Quyidagi o'zgaruvchilarni yarating: 
+kocha="Bog'bon"
+mahalla="Sog'bon"
+tuman="Bodomzor" 
+viloyat="Samarqand"
+Yuqoridagi o'zgaruvchilarni jamlab, quyidagi ko'rinishda konsolga chiqaring:
+Bog'bon ko'chasi, Sog'bon mahallasi, Bodomzor tumani, Samarqand viloyati
+Yuqoridagi o'zgaruvchilarning (kocha, mahalla, tuman, viloyat) qiymatini foydalanuvchidan so'rang. Va avvalgi mashqni takrorlang.
+Yuqoridagi matnni konsolga chiqarishda har bir verguldan keyin yangi qatordan yozing
+Yuqoridagi matnni f-string yordamida, yangi, manzil deb nomlangan o'zgaruvchiga yuklang
+manzilga biz yuqorida o'rgangan title(), upper(), lower() , capitalize() metodlarini qo'llab ko'ring.'''
+kocha = "Bog'bon"
+mahalla = "Sog'bon"
+tuman = "Bodomzor"
+viloyat = "Samarqand"
+print(kocha," kochasi, ", mahalla," mahallasi, ", tuman, " tumani, ", viloyat, " viloyati")
+kocha = input("Ko'changizni kiriting: ")
+mahalla = input("Mahallangizni kiriting: ")
+tuman = input("Tumaningizni kiriting: ")
+viloyat = input("Viloyatingizni kiriting: ")
+print(kocha," kochasi, \n", mahalla," mahallasi, \n", tuman, " tumani, \n", viloyat, " viloyati")
+manzil =f"{kocha.title()} kochasi, \n {mahalla.capitalize()} mahallasi, \n{tuman.upper()}  tumani, \n{viloyat.upper()}  viloyati"
+print(manzil)
+
