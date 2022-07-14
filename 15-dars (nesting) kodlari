@@ -1,0 +1,81 @@
+safar={"ismi":"safarali",
+       "familiyasi":"jumanov",
+       "tyli":2001,
+       "tjoyi_tum":"sardoba",
+       "hozirda":"talaba",
+       "asarlari":["dasturlash","hayotiy yo'l","erkak bo'lish shartlari"]}
+jamshid={"ismi":"jamshidbek",
+         "familiyasi":"nurullayev",
+         "tyli":2001,
+         "tjoyi_tum":"sardoba",
+         "hozirda":"talaba",
+         "asarlari":["dasturlash","erkak bo'lish asta asta","xotin bo'lish bir pasda"]}
+javoh={"ismi":"javohir",
+       "familiyasi":"egamberdiyev",
+       "tyli":2001,
+       "tjoyi_tum":"sardoba",
+       "hozirda":"talaba",
+       "asarlari":["oqibat","hotin bo'lish oson","erkak bo'lish sirlari"]}
+azi={"ismi":"aziza",
+     "familiyasi":"ahrorova",
+        "tyli":2003,
+          "tjoyi_tum":"yangiobod",
+          "hozirda":"talaba",
+          "asarlari":["tilingga seni fchuuuuvvvvvv....","yaralangan qush hamon uchmoqda","ayroni achimaydi"]}
+
+mashhurlar = [safar,jamshid,javoh,azi]
+for mashhur in mashhurlar:
+    print(f"\n{mashhur['ismi'].title()} {mashhur['familiyasi'].title()} "
+          f"{mashhur['tyli']}-yilda {mashhur['tjoyi_tum'].title()} tumanida "
+          f"tug'ilgan. U hozirda {mashhur['hozirda']}, \nAsarlari: ")
+    for asar in mashhur["asarlari"]:  
+        print(asar.upper())
+    
+#Yuqoridagi lug'atlarga har bir shaxsning mashxur asarlari ro'yxatini ham qo'shing.
+# For tsikli yordamida muallifning ismi va uning asarlarini konsolga chiqaring.        
+
+#Oila a'zolaringiz (do'stlaringiz) dan 3 ta sevimli kino-seriali haqida so'rang.
+#Do'stingiz ismi kalit, uning sevimli kinolarini esa ro'yxat ko'rinishida
+#lug'artga saqlang.  Natijani konsolga chiqaring.
+kinolar = {"safarali":["payg'anbarimiz...","imon...","yaxshilikka qarab..."],
+           "javohir":["detektiv","jangari","fantastik"],
+           "jamshidbek":["qalbga yo'l","melodramma","hayotiy yo'llar"],
+           "aziza":["nasriddin afandi","uyqudagi malika",'otangni bolasi']}
+for ism,kinolar in kinolar.items():
+    print(f"\nDo'stim {ism.title()}:")
+    for kino in kinolar:
+        print(kino.capitalize())
+    print("kinolarni yoqtradi!!!\n")   
+#Davlatlar degan lug'at yarating, lug'at ichida bir nechta davlatlar haqida
+#ma'lumotlarni lug'at ko'rinishida saqlang. Har bir davlat haqida ma'lumotni
+#konsolga chiqaring.     
+dlar = {"o'zbekiston":{"poytaxti":"toshkent",
+                       "hududi":400000,
+                       "aholisi":33000000,
+                       "pul birligi":"so'm"}, 
+        "rassiya":{"poytaxti":"moskva",
+                               "hududi":40656740,
+                               "aholisi":98765320,
+                               "pul birligi":"rubil"},
+        "amerika":{"poytaxti":"vashington",
+                               "hududi":2345000,
+                               "aholisi":234560000,
+                               "pul birligi":"dollor"} }
+"""for d,mlar in dlar.items():
+    print(f"\n{d.capitalize()}ning poytaxti {mlar['poytaxti'].title()}"
+          f"\nHududi: {mlar['hududi']}\nAholisi: {mlar['aholisi']}\nPul birligi: "
+              f"{mlar['pul birligi']}")"""
+
+#Yuqoridagi dasturga o'zgartirish kiriting: konsolga barcha davlatlarni emas,
+#foydalanuvchi so'ragan davlat haqida ma'lumot bering. Agar davlat sizning
+#lug'atingizda mavjud bo'lmasa, "Bizda bu davlat haqida ma'lumot yo'q" degan
+#xabarni chiqaring.
+f=input("Davlat kriting: ")
+xatolik = "Bizda bunday davlat yo'q!"
+if f in dlar.keys():
+    m = dlar[f]
+    print(f"{f.capitalize()}ning poytaxti {m['poytaxti']}"
+          f'\nHududi {m["hududi"]},\nAholisi {m["aholisi"]},\nPul birligi {m["pul birligi"]}')
+else:    
+    print(xatolik)
+      
