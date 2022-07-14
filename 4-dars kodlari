@@ -11,6 +11,8 @@ Yuqoridagi o'zgaruvchilarning (kocha, mahalla, tuman, viloyat) qiymatini foydala
 Yuqoridagi matnni konsolga chiqarishda har bir verguldan keyin yangi qatordan yozing
 Yuqoridagi matnni f-string yordamida, yangi, manzil deb nomlangan o'zgaruvchiga yuklang
 manzilga biz yuqorida o'rgangan title(), upper(), lower() , capitalize() metodlarini qo'llab ko'ring.'''
+
+
 kocha = "Bog'bon"
 mahalla = "Sog'bon"
 tuman = "Bodomzor"
