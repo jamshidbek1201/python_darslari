@@ -1,0 +1,17 @@
+#Web sahifangiz uchun foydalanuvchi (user) klassini tuzing. Klassning xususiyatlari sifatida odatda ijtimoiy tarmoqlar talab qiladigan ma'lumotlarni kiriting (ism, foydalanuvchi ismi, email, va hokazo)
+
+#Klassga bir nechta metodlar qo'shing, jumladan get_info() metodi foydalanuvchi haqida yig'ilgan ma'lumotlarni chiroyli qilib chiqarsin (masalan: "Foydalanuvchi: alijon1994, ismi: Alijon Valiyev, email: alijon1994@gmail.com)
+
+class User:
+  def __init__(self,ism,f_ism,email):
+    self.ismi=ism
+    self.foydalanuvchi_ismi = f_ism
+    self.pochta_manzili = email
+  def grt_info(self):
+    print(f"Foydalanuvchi {self.foydalanuvchi_ismi}, ism: {self.ismi} emaili: {self.pochta_manzili}")
+
+
+f1 = User("Nurullayev Jamshidbek", "jamshidbek1201","nj1234@gmail.com")
+f1.grt_info()
+
+
