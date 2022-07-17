@@ -1,0 +1,63 @@
+#Avto degan yangi klass yarating. Unga avtomobillarga doir bo'lgan bir nechta xususiyatlar (model, rang, korobka, narh va hokazo) qo'shing. Ayrim xususiyatlarga standart qiymat bering (masalan, kilometer=0)
+#Avto ga oid obyektning xususiyatlarini qaytaradigan metodlar yozing
+#get_info() metodi avti haqida to'liq ma'lumotni matn ko'rinishida qaytarsin
+#Avto ga oid obyektning xususiyatlarini yangilaydigan metodlar yozing.
+#update_km() metodi son qabul qilib olib, avtomobilning yurgan kilometrajini yangilab borsin
+#Yangi, Avtosalon degan klass yarating va kerakli xususiyatlar bilan to'ldiring (salon nomi, manzili, sotuvdagi avtomobillar va hokazo)
+#Avtosalonga yangi avtomobillar qo'shish uchun metod yozing
+#Avtosalondagi avtomobillar haqida ma'lumot qaytaruvchi metod yozing
+#Yuqoridagi obyektlar va ularga tegishli metodlarni tekshirib ko'ring
+#dir() funksyasi va __dict__ metodi yordamida o'zingiz yozgan va Pythondagi turli klass va obyektlarning xususiyatlari va metodlarini toping (dir(str), dir(int) va hokazo)
+#javoblari:
+class Avto:
+  def __init__(self,model,rang,korobka,narh):
+    self.model = model
+    self.rang = rang
+    self.korobka = korobka
+    self.narh = narh
+    self.kilometer = 0
+  def modelini(self):
+    return self.model
+  def y_model(self,modeli):
+    self.model = modeli
+    return f"Modeli yangilandi, {self.model}"
+  def rangini(self):
+    return self.rang
+  def y_rang(self,rangi):
+    self.rang = rangi
+    return f"Rangi yangilandi, {self.rang}"
+  def korobkasini(self):
+    return self.korobka
+  def y_korobka(self,korobkasi):
+    self.korobka = korobkasi
+    return f"Korobkasi yangilandi, {self.korobka}"
+  def narhini(self):
+    return self.narh
+  def y_narh(self,narhi):
+    self.narh = narhi
+    return f"Narxi yangilandi, {self.narh}"
+  def kilometerini(self):
+    return self.kilometer
+  def y_kilometer(self,kilometri):
+    self.kilometer = kilometri
+    return f"Kilometeri yangilandi, {self.kilometer}"
+  def get_info(self):
+    return f"Mashina modeli {self.model}, rangi {self.rang}, korobka {self.korobka}, narhi {self.narh}, kilometri {self.kilometer}"
+avto1=Avto('malibu', 'qora', 'avto', 20)
+avto2=Avto('nexia', 'oq', 'avto', 5)
+avto3=Avto('jentra', 'pushti', 'avto', 10)
+avtos = [avto1,avto2,avto3]
+class Avtosalon:
+  def __init__(self,salon_nomi,salon_manzili,salon_avtos):
+    self.s_nomi = salon_nomi
+    self.s_manzili = salon_manzili
+    self.s_avtos = salon_avtos
+  def s_nomi(self,s_nomi):
+    self.s_nomi = s_nomi
+  def s_manzili(self,s_manzili):
+    self.s_manzili = s_manzili
+  def s_avtos(self,s_avtos):
+    self.s_avtos = s_avtos
+  def info (self):
+    return f"Salon nomi {self.s_nomi}, manzili {self.s_manzili}, avtomobillar {self.s_avtos}"
+avtosalon1 = Avtosalon("Azon", "sardoba", avtos) 
