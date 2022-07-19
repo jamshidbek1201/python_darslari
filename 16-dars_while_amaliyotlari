@@ -1,0 +1,38 @@
+#1-amaliyot:
+
+savol = "yaxshi ko'rgan kitobizni kiriting"
+savol += "(to'xtash uchun 'stop' so'zini kiriting!)"
+b = True
+while b:
+    a = input(savol)
+    if a=="stop":
+        b=False
+#2-amaliyot:
+while True:
+    a = input("Yoshingizni kriting!(dasturni to'xtatish uchun 'stop' deb yozing!')>>> ")
+    if a!="stop":
+        if int(a)<=7:
+            narx = "2000 so'm"
+        elif int(a)<=18:
+            narx = "3000 so'm"
+        elif int(a)<=65:
+            narx = "10000 so'm"
+        else:
+            narx = 'bepul!'
+        print("Sizga chipta narxi ",narx)
+    else:
+        break
+#3-amaliyot:
+savol ="Kiritilgan sonning ildizini qaytaruvchi dastur.\n"
+savol += "Musbat son kiriting "
+savol += "(dasturni to'xtatish uchun 'exit' deb yozing): "
+
+while True:
+    qiymat = input(savol)
+    if qiymat == "exit":
+        break
+    elif int(qiymat)<0:
+        continue
+    else:
+        ildiz = float(qiymat)**0.5
+        print(f"\n{qiymat} ning ildizi {ildiz} ga teng")
