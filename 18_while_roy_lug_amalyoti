@@ -1,0 +1,80 @@
+#Foydalanuvchidan buyurtma qabul qiluvchi dastur yozing. Mahsulotlar 
+#nomini birma-bir qabul qilib, yangi ro'yxatga joylang.
+mahsulotlar = []
+n=1
+while True:
+    mahsulot = input(f"{n}-yoqtirgan mahsulotiningizni kriting(to'xtash uchun 'stop' deb yozing!'): ")
+    if mahsulot=="stop":
+        break
+    else:
+        mahsulotlar.append(mahsulot)
+        n+=1
+        continue
+print(mahsulotlar)
+#e-bozor uchun mahsulotlar va ularning narhlari lug'atini shakllantiruvchi dastur yozing. Foydalanuvchidan lug'atga bir nechta elementlar (mahsulot va uning narhi) kiritishni so'rang.
+b = {}
+n=1
+while True:
+    kalit = input(f"{n}-mahsulotni kriting: ")
+    n+=1
+    qiymat =input(f"{kalit}ning narxini kriting: ")
+    b[kalit]=int(qiymat)
+    savol = input("yana mahsulot krittasizmi???(ha/yo'q): ")
+    if savol=="yo'q":
+        break
+print("\nMahsulotlar ro'yxati:")
+for k,q in b.items():
+    print(f"\n{k}-{q} so'm")
+
+#Yuqoridagi ikki dasturni jamlaymiz. Foydalanuvchi buyurtmasi ro'yxatidagi har bir mahsulotni e-bozordagi mahsulotlar bilan solishitiring (tayyor ro'yxat ishlatishingiz mumkin). Agar mahsuot e-bozorda mavjud bo'lsa mahuslot narhini chiqaring, aks holda "Bizda bu mahsulot yo'q" degan xabarni kor'sating.
+bozor = {"kartoshka":23000,
+         "pomidor":23000,
+         "bodring":23000,
+         "qalanpir":23000,
+         "saryog'":23000,
+         "piyoz":23000}
+mahsulotlar = []
+n=1
+while True:
+    mahsulot = input(f"{n}-yoqtirgan mahsulotiningizni kriting(to'xtash uchun 'stop' deb yozing!'): ")
+    if mahsulot=="stop":
+        break
+    else:
+        mahsulotlar.append(mahsulot)
+        n+=1
+        continue
+for mah in mahsulotlar:
+    if mah in bozor.keys():
+        print(f"\n{mah}ning narxi: {bozor[mah]} so'm")
+    else:
+        print(f"\nBu {mah} bizda yo'q")
+        
+#bu yerda esa mustaqil amaqlyot...       
+bozor = {}
+n=1
+while True:
+    kalit = input(f"{n}-mahsulotni kriting: ")
+    n+=1
+    qiymat =input(f"{kalit}ning narxini kriting: ")
+    bozor[kalit]=int(qiymat)
+    savol = input("yana mahsulot krittasizmi???(ha/yo'q): ")
+    if savol=="yo'q":
+        break
+print("\nMahsulotlar ro'yxati:")
+for k,q in bozor.items():
+    print(f"\n{k}-{q} so'm")
+mahsulotlar = []
+n=1
+while True:
+    mahsulot = input(f"{n}-yoqtirgan mahsulotiningizni kriting(to'xtash uchun 'stop' deb yozing!'): ")
+    if mahsulot=="stop":
+        break
+    else:
+        mahsulotlar.append(mahsulot)
+        n+=1
+        continue
+for mah in mahsulotlar:
+    if mah in bozor.keys():
+        print(f"\n{mah}ning narxi: {bozor[mah]} so'm")
+    else:
+        print(f"\nBu {mah} bizda yo'q")
