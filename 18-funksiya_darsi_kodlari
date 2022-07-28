@@ -1,0 +1,39 @@
+"""Foydalanuvchi ismi va yoshini so'rab, uning tug'ilgan yilini hisoblaydigan funksiya yozing.
+Foydalanuvchidan son olib, uning kvadrati va kubini konsolga chiqaruvchi funksiya yozing.
+Foydalanuvchidan son olib, son juft yoki toqligini konsolga chiqaruvchi funksiya yozing.
+Foydalanuvchidan ikkita son olib, ulardan kattasini konsolga chiqaruvchi funksiya yozing. Agar sonlar teng bo'lsa "Sonlar teng" degan xabarni chiqaring.
+Foydalanuvchidan x va y sonlarini olib, x ning darajasida y konsolga chiqaruvchi funksiya yozing.
+Yuqoridagi funksiyada y uchun 2 standart qiymatini bering.
+Foydalanuvchidan son qabul qilib, sonni 2 dan 10 gacha bo'lgan sonlarga qoldiqsiz bo'linishini tekshiruvchi funksiya yozing. Natijalarni konsolga chiqaring.
+"""
+def savol(ism,yosh):
+    """Foydalanuvchidan ismini va yoshini so'rab tug'ilgan yilini chiqaradigan funksiya"""
+    print(f"Assalomu alaykum {ism.capitalize()}, siz {2022-yosh}-yilda tug'ilgansiz!!!")
+
+def son1(x):
+    print(x,"ning kvadrati: ",x**2)
+    print(x,"ning kubi: ",x**3)
+
+def son2(y):
+    if y%2==0:
+        print(y," juft son!")
+    else:
+        print(y," toq son!")
+
+def son3(x,y):
+    if x<y:
+        print("Katta son: ",y)
+    elif x>y:
+        print("Katta son: ",x)
+    else:
+        print("Sonlar teng!")
+
+def son4(x,y=2):
+    print(x**y)
+
+
+def son5(x):
+    for n in range(2,11):
+        if x%n==0:
+            print(x,":",n,"=",x//n)
+son5(70)
